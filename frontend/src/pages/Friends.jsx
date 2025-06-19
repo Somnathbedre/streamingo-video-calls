@@ -181,6 +181,8 @@
 
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { useEffect, useState } from "react";
+import AiLanguageHelper from "../components/AiLanguageHelper";
+
 import {
   getOutgoingFriendReqs,
   getUserFriends,
@@ -248,6 +250,7 @@ const FriendsPage = () => {
             ))}
           </div>
         )}
+        <AiLanguageHelper />
       </div>
     </div>
   );
